@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(197, 228, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* 
+.place-for-splitter {
+  height: 60px;
+  width: 60px;
+  background-color: wheat;
+  position: relative;
+  z-index: 1;
+  top: 0;
+} */
+
+.header {
+  font-family: Space Mono;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-size: 25px;
+  color: rgb(57, 92, 94);
+  letter-spacing: 10px;
+}
+
+.main-content {
+  height: 60%;
+  width: 60%;
+  background-color: white;
+  z-index: 0;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+}
+
+.main-content-left-side {
+  height: 100%;
+  width: 50%;
+
+  display: inline-block;
+  border-radius: 15px 0 0 15px;
+  padding-top: 45px;
+  padding-left: 25px;
+}
+
+.main-content-bill {
+  height: 75px;
+  width: 90%;
+}
+
+.main-content-left-side {
+  height: 100%;
+  width: 60%;
+  border-radius: 0 15px 15px 0;
+  display: inline-block;
+}
+
+.p-bill {
+  font-family: Space Mono;
+}
+
+.bill-input {
+  margin-top: 5px;
+  height: 35px;
+  width: 110%;
+  background-color: rgb(243, 248, 251);
+  border: none;
+  text-align: right;
+  font-family: Space Mono;
+}
+
+.main-content-tip {
+  height: 140px;
+  width: 90%;
+  margin-top: 45px;
+  font-family: Space Mono;
+}
+
+.place-for-buttons {
+  height: 110px;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 115px 115px 115px;
+  grid-template-rows: 45px 45px;
+  grid-gap: 10px;
+}
+
+.place-for-people {
+  height: 100px;
+  width: 90%;
+  padding-top: 25px;
+  /* background-color: red; */
+  font-family: Space Mono;
+}
+
+.people-input {
+  height: 35px;
+  width: 110%;
+  text-align: right;
+  border: none;
+  background-color: rgb(243, 248, 251);
+  font-family: Space Mono;
+}
+
+.grid-button1,
+.grid-button2,
+.grid-button4,
+.grid-button5 {
+  background-color: rgb(0, 71, 75);
+  color: white;
+  font-family: Space Mono;
+}
+
+.grid-button3 {
+  background-color: rgb(38, 194, 173);
+}
+
+.grid-button1,
+.grid-button2,
+.grid-button3,
+.grid-button4,
+.grid-button5,
+.grid-button6 {
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s ease;
+  scale: 1.1;
+}
+
+button:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+
+button:not(:hover) {
+  transform: scale(1); /* Wróć do pierwotnego rozmiaru */
+}
+
+.grid-button3,
+.grid-button6 {
+  font-family: Space Mono;
+  border: none;
+}
+
+.grid-button3 {
+  color: rgb(0, 72, 77);
+}
+
+.grid-button6 {
+  background-color: rgb(244, 248, 251);
+  color: rgb(120, 145, 143);
+}
+
+.main-content-right-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content-right-side-summary {
+  height: 80%;
+  width: 70%;
+  padding-left: 35px;
+  padding-top: 45px;
+  background-color: rgb(0, 71, 75);
+  border-radius: 15px;
+}
+
+.place-for-tip,
+.place-for-total {
+  height: 80px;
+  width: 80%;
+
+  display: flex;
+}
+
+.place-for-text {
+  padding-top: 7.5%;
+}
+
+.place-for-text {
+  height: 100%;
+  width: 30%;
+  font-family: Space Mono;
+  font-size: 12px;
+  color: white;
+}
+
+.place-for-value {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: Space Mono;
+  font-size: 35px;
+  color: rgb(37, 193, 172);
+}
+
+.place-for-value::before {
+  content: "$";
+}
+
+.span {
+  color: rgb(62, 132, 137);
+  font-size: 10px;
+}
+
+.place-for-reset {
+  height: 70px;
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.reset {
+  height: 65%;
+  width: 100%;
+  background-color: rgb(38, 194, 173);
+  border: none;
+  border-radius: 6px;
+  font-family: Space Mono;
+  font-size: 15px;
+  color: rgb(0, 89, 84);
+}
+
+.reset:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
